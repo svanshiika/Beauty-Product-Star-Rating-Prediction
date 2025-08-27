@@ -1,42 +1,55 @@
-# Beauty Product Star Rating Prediction ⭐
+# ⭐ Beauty Product Star Rating Prediction
 
-Predicting **Amazon beauty product star ratings** (low / medium / high) using **LIWC-like NLP features** and supervised ML models.
+A machine learning project that predicts **Amazon beauty product star ratings (low / medium / high)** from customer reviews using **LIWC-like NLP features**.  
+
+Built with **Python (scikit-learn, NLTK, imbalanced-learn)** and **WEKA**, this project explores consumer behavior in the beauty industry and benchmarks classic ML algorithms.
 
 ---
 
 ## 📌 Project Overview
-This project explores consumer behavior in the beauty industry by analyzing Amazon review text and predicting the corresponding star rating category.  
-The pipeline includes:
-- Data preprocessing & cleaning
-- LIWC-inspired feature engineering (emotions, cognition, social words, etc.)
-- Model training (Logistic Regression, KNN, Random Forest)
-- Evaluation with cross-validation, hyperparameter tuning, and SMOTE oversampling.
+- **Goal**: Predict star rating classes (1–2 = low, 3 = medium, 4–5 = high) from review text.  
+- **Features**: LIWC-inspired features (affective, cognitive, social, moralization words, etc.).  
+- **Models**: Logistic Regression, K-Nearest Neighbors (KNN), Random Forest.  
+- **Tools**: Python (Jupyter, Spyder) + WEKA (GUI-based ML).  
 
-Random Forest was found to be the best-performing model in this study.
+Random Forest emerged as the most robust model overall.
 
 ---
 
-## 🗂️ Repo Structure
+## 📂 Repository Structure
 
-├── notebooks/ # Jupyter notebooks for exploration & modeling
-├── src/ # Python scripts for data prep, feature extraction, training
-├── data/ # (Optional) sample dataset or link to source
-├── reports/ # Final report PDF
-├── requirements.txt # Dependencies
-└── README.md # This file
+├─ notebooks/
+│ ├─ Logistic Regression (CA2).ipynb
+│ ├─ K-Nearest Neighbors (CA2).ipynb
+│ └─ Random Forest (CA2).ipynb
+├─ data/
+│ └─ ml_model_dataset_FINAL_FIXED.arff
+├─ reports/
+│ ├─ VSharma_CA2_Report.pdf
+│ └─ WEKA(Screenshots_of_results).docx
+├─ requirements.txt
+├─ .gitignore
+└─ README.md
 
 
 ---
 
 ## 📊 Results
-- Logistic Regression: moderate performance, sensitive to class imbalance  
-- KNN: struggled with non-linear LIWC features  
-- **Random Forest**: most robust, best F1-score across evaluations  
+
+### Python (scikit-learn)
+- Logistic Regression: struggled on imbalance; improved after SMOTE + tuning.  
+- KNN: sensitive to imbalance, best with **k=11 neighbors**.  
+- Random Forest: consistently best, highest F1 and ROC-AUC.  
+
+### WEKA
+- Random Forest achieved **F1 ≈ 0.68** (best among all).  
+- Logistic Regression and KNN improved under cross-validation but lagged behind RF.  
+
+Screenshots of WEKA results are included in `reports/`.
 
 ---
 
-## ⚙️ How to Run
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/Beauty-Product-Star-Rating-Prediction.git
-   cd Beauty-Product-Star-Rating-Prediction
+## ✉️ Contact
+If you have questions, feedback, or collaboration ideas, feel free to reach out:  
+- Email: [svanshiika@gmail.com](mailto:svanshiika@gmail.com)  
+- LinkedIn: [vanshika](https://www.linkedin.com/in/your-profile/svanshiika21)
