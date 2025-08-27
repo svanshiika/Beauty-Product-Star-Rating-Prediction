@@ -17,7 +17,7 @@ Random Forest emerged as the most robust model overall.
 ---
 
 ## 📂 Repository Structure
-
+'''
 ├─ notebooks/
 │ ├─ Logistic Regression (CA2).ipynb
 │ ├─ K-Nearest Neighbors (CA2).ipynb
@@ -30,7 +30,7 @@ Random Forest emerged as the most robust model overall.
 ├─ requirements.txt
 ├─ .gitignore
 └─ README.md
-
+'''
 
 ---
 
